@@ -40,7 +40,7 @@ const About: React.FC = () => {
                   <Code className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-white font-bold">50+ Projects</div>
+                  <div className="text-white font-bold">10+ Projects</div>
                   <div className="text-xs text-slate-500 uppercase tracking-wider">Completed</div>
                 </div>
               </div>
