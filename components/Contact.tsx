@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
           <div className="flex flex-col items-center gap-8 relative z-10">
             <Magnet magnetStrength={30}>
               <a
-                href="mailto:hello@aidev.io"
+                href="mailto:contact@sagar.dev"
                 className="px-10 py-5 bg-white text-slate-950 font-black rounded-full text-xl hover:scale-105 transition-transform flex items-center gap-3 shadow-2xl shadow-white/10"
               >
                 Say Hello <Send className="w-6 h-6" />
@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
 
             <div className="flex gap-6 mt-4">
               <Magnet magnetStrength={15}>
-                <a href="#" className="flex p-4 bg-slate-900 rounded-2xl hover:bg-slate-800 hover:text-blue-400 transition-all border border-slate-800">
+                <a href="https://github.com/sagar04-cloud" target="_blank" rel="noopener noreferrer" className="flex p-4 bg-slate-900 rounded-2xl hover:bg-slate-800 hover:text-blue-400 transition-all border border-slate-800">
                   <Github className="w-6 h-6" />
                 </a>
               </Magnet>
@@ -62,7 +62,7 @@ const Contact: React.FC = () => {
           </div>
         </div>
       </TiltCard>
-    </section>
+    </section >
   );
 };
 

@@ -183,11 +183,10 @@ const Hero: React.FC<HeroProps> = ({ startPopup = false }) => {
           </div>
         </motion.div>
 
-        {/* 5. Social Links (2x1) */}
         <motion.div variants={itemVariants} className="col-span-1 md:col-span-2 bento-card p-6 flex flex-col md:flex-row justify-around items-center gap-4 hover:border-pink-500/30">
-          <SocialRow icon={<Github className="w-6 h-6" />} label="Github" />
-          <SocialRow icon={<Linkedin className="w-6 h-6" />} label="LinkedIn" />
-          <SocialRow icon={<Mail className="w-6 h-6" />} label="Email" />
+          <SocialRow icon={<Github className="w-6 h-6" />} label="Github" href="https://github.com/sagar04-cloud" />
+          <SocialRow icon={<Linkedin className="w-6 h-6" />} label="LinkedIn" href="#" />
+          <SocialRow icon={<Mail className="w-6 h-6" />} label="Email" href="#" />
         </motion.div>
 
         {/* 6. Contact CTA (2x1) */}
@@ -214,9 +213,9 @@ const Hero: React.FC<HeroProps> = ({ startPopup = false }) => {
   );
 };
 
-const SocialRow = ({ icon, label }: { icon: React.ReactNode, label: string }) => (
+const SocialRow = ({ icon, label, href }: { icon: React.ReactNode, label: string, href: string }) => (
   <Magnet magnetStrength={15}>
-    <a href="#" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors group">
+    <a href={href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors group">
       <div className="p-2 rounded-lg bg-white/5 group-hover:bg-white/10 transition-colors">
         {icon}
       </div>

@@ -19,30 +19,30 @@ import { Project, SkillCategory } from './types';
 export const PROJECTS: Project[] = [
   {
     id: '1',
-    title: 'NeuralVision AI',
-    description: 'A real-time object detection and classification dashboard using TensorFlow.js and React.',
-    image: 'https://picsum.photos/seed/nv/800/600',
-    tech: ['React', 'TensorFlow.js', 'Tailwind', 'Python'],
-    liveUrl: '#',
-    githubUrl: '#'
+    title: 'AI Interview Prep',
+    description: 'A state-of-the-art platform designed to help candidates ace job interviews using Gemini 2.5 Flash. features real-time mock interviews with voice interaction and structured feedback.',
+    image: './assets/ai-interviewer.png',
+    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Gemini AI'],
+    liveUrl: 'https://ai-interviewer1.vercel.app/',
+    githubUrl: 'https://github.com/sagar04-cloud/ai-interview'
   },
   {
     id: '2',
-    title: 'SentientFlow CRM',
-    description: 'An AI-powered CRM that predicts customer churn and automates follow-up emails.',
-    image: 'https://picsum.photos/seed/crm/800/600',
-    tech: ['Next.js', 'Node.js', 'OpenAI', 'Supabase'],
-    liveUrl: '#',
-    githubUrl: '#'
+    title: 'SkillBridge AI',
+    description: 'An AI-driven platform designed to bridge the gap between skills and career opportunities. It leverages Gemini AI to provide intelligent recommendations and path-finding for skill development.',
+    image: './assets/skill-bridge.png',
+    tech: ['React', 'TypeScript', 'Node.js', 'Gemini AI'],
+    liveUrl: 'https://skillbridge-ai-iota.vercel.app/',
+    githubUrl: 'https://github.com/sagar04-cloud/SkillBridge-AI'
   },
   {
     id: '3',
-    title: 'VibeCode Editor',
-    description: 'A minimalist collaborative code editor with integrated Gemini-based auto-completion.',
-    image: 'https://picsum.photos/seed/vibe/800/600',
-    tech: ['TypeScript', 'WebSocket', 'Firebase', 'Gemini API'],
-    liveUrl: '#',
-    githubUrl: '#'
+    title: 'Smart Campus Assistant',
+    description: 'An intelligent campus assistant featuring an AI chatbot for general inquiries, campus navigation assistance, and real-time event information for students and faculty.',
+    image: './assets/smart-campus.png',
+    tech: ['React', 'TypeScript', 'Node.js', 'Gemini AI'],
+    liveUrl: 'https://smart-campus-ai-assistant.vercel.app/',
+    githubUrl: 'https://github.com/sagar04-cloud/smart-campus-ai-assistant'
   }
 ];
 
