@@ -1,63 +1,37 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# AI Developer Portfolio
 
-A premium, modern developer portfolio built with React, Vite, and Framer Motion, featuring glassmorphism design, 3D backgrounds, and smooth micro-animations.
+# Sagar | Full Stack AI Engineer Portfolio
 
-## 🚀 Live Demo
-View the live project: [https://github.com/sagar04-cloud/Portfolio-.git](https://github.com/sagar04-cloud/Portfolio-.git)
+A premium, modern developer portfolio built to showcase my transition and expertise in Full Stack Development and Artificial Intelligence. Built with React, TypeScript, Vite, and Framer Motion, it features a glassmorphism design, immersive 3D backgrounds, and smooth micro-animations.
 
-## ✨ Features
-- **Modern UI/UX**: Sleek dark mode design with glassmorphism effects.
-- **Dynamic Animations**: Smooth scroll reveals and micro-interactions powered by Framer Motion.
-- **3D Interactive Background**: Immersive background elements using React Three Fiber.
-- **Responsive Design**: Fully optimized for all screen sizes (Mobile, Tablet, Desktop).
-- **Project Showcases**: Curated list of AI and Web development projects.
-- **Gemini Integration**: Built with insights and assistance from Gemini AI.
+## 🚀 Live Demo & Links
+- **GitHub Repository**: [https://github.com/sagar04-cloud/Portfolio-.git](https://github.com/sagar04-cloud/Portfolio-.git)
+- **LinkedIn**: [https://www.linkedin.com/in/sagar-u/](https://www.linkedin.com/in/sagar-u/)
+- **Email**: sagaru.works@gmail.com
 
-## 🛠️ Tech Stack
-- **Frontend**: React 19, TypeScript, Tailwind CSS
-- **Animation**: Framer Motion
-- **3D Graphics**: Three.js, React Three Fiber, Drei
-- **Icons**: Lucide React
-- **Build Tool**: Vite
+## ✨ About Me
+I'm a Full Stack AI Engineer based in Bangalore (Remote Compatible) with 3+ years of experience. I specialize in crafting intelligent digital experiences with modern web technologies and Generative AI Models.
 
-## 📦 Installation & Setup
+## 🛠️ Tech Arsenal
+- **Frontend**: React, Next.js, TypeScript, Tailwind CSS, UI/UX
+- **Backend & Cloud**: Node.js, Supabase, Firebase, AWS, Docker, Vercel, Python
+- **AI & Data**: Gemini, AI Studio, RAG (Retrieval-Augmented Generation)
+- **Animation & 3D**: Framer Motion, Three.js, React Three Fiber, Drei
 
-### Prerequisites
-- Node.js (v18 or higher)
-- npm or yarn
+## 💻 Selected Projects
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/sagar04-cloud/Portfolio-.git
-cd Portfolio-
-```
+### [AI Interview Prep](https://ai-interviewer1.vercel.app/)
+A state-of-the-art platform designed to help candidates ace job interviews using Gemini 2.5 Flash. Features real-time mock interviews with voice interaction and structured feedback.
+- **Tech Stack**: React, TypeScript, Tailwind CSS, Gemini AI
+- **GitHub**: [ai-interview](https://github.com/sagar04-cloud/ai-interview)
 
-### 2. Install dependencies
-```bash
-npm install
-```
+### [SkillBridge AI](https://skillbridge-ai-iota.vercel.app/)
+An AI-driven platform designed to bridge the gap between skills and career opportunities. It leverages Gemini AI to provide intelligent recommendations and path-finding for skill development.
+- **Tech Stack**: React, TypeScript, Node.js, Gemini AI
+- **GitHub**: [SkillBridge-AI](https://github.com/sagar04-cloud/SkillBridge-AI)
 
-### 3. Environment Configuration
-Create a `.env.local` file in the root directory and add your API keys:
-```env
-GEMINI_API_KEY=your_api_key_here
-```
+### [Smart Campus Assistant](https://smart-campus-ai-assistant.vercel.app/)
+An intelligent campus assistant featuring an AI chatbot for general inquiries, campus navigation assistance, and real-time event information for students and faculty.
+- **Tech Stack**: React, TypeScript, Node.js, Gemini AI
+- **GitHub**: [smart-campus-ai-assistant](https://github.com/sagar04-cloud/smart-campus-ai-assistant)
 
-### 4. Run Development Server
-```bash
-npm run dev
-```
-The app will be available at `http://localhost:5173`.
-
-## 🚢 Deployment
-The project is ready to be deployed on platforms like **Vercel** or **Netlify**.
-```bash
-npm run build
-```
-
-## 📄 License
-This project is licensed under the MIT License.
