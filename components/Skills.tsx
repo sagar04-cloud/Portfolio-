@@ -8,7 +8,9 @@ import {
   FileCode,
   Globe,
   Server,
-  Cpu
+  Cpu,
+  Sparkles,
+  Bot
 } from 'lucide-react';
 
 const Skills: React.FC = () => {
@@ -93,15 +95,15 @@ const Skills: React.FC = () => {
                 onToggle={() => handleToggle(2)}
                 items={[
                   <div key="1" className="flex flex-col items-center gap-1">
-                    <Brain className="w-6 h-6 text-violet-500" />
+                    <Sparkles className="w-6 h-6 text-violet-500" />
                     <span className="text-[8px] font-bold text-slate-800 uppercase tracking-wider">Gemini</span>
                   </div>,
                   <div key="2" className="flex flex-col items-center gap-1">
-                    <Cpu className="w-6 h-6 text-violet-400" />
-                    <span className="text-[8px] font-bold text-slate-800 uppercase tracking-wider">PyTorch</span>
+                    <Bot className="w-6 h-6 text-violet-600" />
+                    <span className="text-[8px] font-bold text-slate-800 uppercase tracking-wider">AI Studio</span>
                   </div>,
                   <div key="3" className="flex flex-col items-center gap-1">
-                    <Database className="w-6 h-6 text-violet-600" />
+                    <Database className="w-6 h-6 text-violet-400" />
                     <span className="text-[8px] font-bold text-slate-800 uppercase tracking-wider">RAG</span>
                   </div>
                 ]}

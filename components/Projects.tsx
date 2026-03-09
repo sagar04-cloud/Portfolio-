@@ -26,7 +26,8 @@ const Projects: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="bento-card group flex flex-col md:flex-row gap-8 p-6 md:items-center"
+            onClick={() => window.open(project.liveUrl, "_blank")}
+            className="bento-card group flex flex-col md:flex-row gap-8 p-6 md:items-center cursor-pointer hover:border-indigo-500/50 transition-colors relative"
           >
             {/* Image / Preview */}
             <div className="w-full md:w-1/3 aspect-video rounded-xl overflow-hidden relative">
@@ -43,10 +44,10 @@ const Projects: React.FC = () => {
               <div className="flex justify-between items-start mb-2">
                 <h3 className="text-2xl font-bold font-heading text-white">{project.title}</h3>
                 <div className="flex gap-2">
-                  <a href={project.liveUrl} className="p-2 rounded-full hover:bg-white/10 text-slate-400 hover:text-indigo-400 transition-colors">
+                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="p-2 rounded-full hover:bg-white/10 text-slate-400 hover:text-indigo-400 transition-colors z-10">
                     <ExternalLink className="w-5 h-5" />
                   </a>
-                  <a href={project.githubUrl} className="p-2 rounded-full hover:bg-white/10 text-slate-400 hover:text-white transition-colors">
+                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="p-2 rounded-full hover:bg-white/10 text-slate-400 hover:text-white transition-colors z-10">
                     <Github className="w-5 h-5" />
                   </a>
                 </div>

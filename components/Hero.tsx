@@ -175,7 +175,7 @@ const Hero: React.FC<HeroProps> = ({ startPopup = false }) => {
         <motion.div variants={itemVariants} className="col-span-1 md:col-span-2 bento-card p-6 flex flex-col justify-center hover:border-purple-500/30">
           <h3 className="text-slate-500 font-medium text-xs uppercase tracking-wider mb-4">Core Technologies</h3>
           <div className="flex flex-wrap gap-3">
-            {['React', 'Next.js', 'TypeScript', 'Node.js', 'Python', 'UI/UX', 'Supabase', 'AWS'].map((tech) => (
+            {['React', 'TypeScript', 'Python', 'UI/UX', 'Supabase', 'Firebase', 'AWS'].map((tech) => (
               <span key={tech} className="px-3 py-1.5 rounded-lg bg-white/5 border border-white/5 text-slate-300 text-sm font-medium hover:bg-white/10 hover:border-indigo-500/30 hover:text-white transition-all cursor-default">
                 {tech}
               </span>
@@ -185,8 +185,8 @@ const Hero: React.FC<HeroProps> = ({ startPopup = false }) => {
 
         <motion.div variants={itemVariants} className="col-span-1 md:col-span-2 bento-card p-6 flex flex-col md:flex-row justify-around items-center gap-4 hover:border-pink-500/30">
           <SocialRow icon={<Github className="w-6 h-6" />} label="Github" href="https://github.com/sagar04-cloud" />
-          <SocialRow icon={<Linkedin className="w-6 h-6" />} label="LinkedIn" href="#" />
-          <SocialRow icon={<Mail className="w-6 h-6" />} label="Email" href="#" />
+          <SocialRow icon={<Linkedin className="w-6 h-6" />} label="LinkedIn" href="https://www.linkedin.com/in/sagar-u/" />
+          <SocialRow icon={<Mail className="w-6 h-6" />} label="Email" href="https://mail.google.com/mail/?view=cm&fs=1&to=sagaru.works@gmail.com" />
         </motion.div>
 
         {/* 6. Contact CTA (2x1) */}
@@ -213,15 +213,17 @@ const Hero: React.FC<HeroProps> = ({ startPopup = false }) => {
   );
 };
 
-const SocialRow = ({ icon, label, href }: { icon: React.ReactNode, label: string, href: string }) => (
-  <Magnet magnetStrength={15}>
-    <a href={href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors group">
-      <div className="p-2 rounded-lg bg-white/5 group-hover:bg-white/10 transition-colors">
-        {icon}
-      </div>
-      <span className="font-medium text-sm">{label}</span>
-    </a>
-  </Magnet>
-);
+const SocialRow = ({ icon, label, href }: { icon: React.ReactNode, label: string, href: string }) => {
+  return (
+    <Magnet magnetStrength={15}>
+      <a href={href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors group">
+        <div className="p-2 rounded-lg bg-white/5 group-hover:bg-white/10 transition-colors">
+          {icon}
+        </div>
+        <span className="font-medium text-sm">{label}</span>
+      </a>
+    </Magnet>
+  );
+};
 
 export default Hero;

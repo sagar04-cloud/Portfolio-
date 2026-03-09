@@ -31,7 +31,7 @@ const About: React.FC = () => {
                   <Zap className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-white font-bold">5+ Years</div>
+                  <div className="text-white font-bold">3+ Years</div>
                   <div className="text-xs text-slate-500 uppercase tracking-wider">Experience</div>
                 </div>
               </div>
