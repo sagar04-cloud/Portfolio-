@@ -58,7 +58,7 @@ const About: React.FC = () => {
                   <div className="absolute inset-0 rounded-full border border-blue-500/30 scale-125 animate-ping"></div>
                 </div>
                 <h3 className="text-xl font-heading font-bold text-white mb-2 italic">"The best way to predict the future is to build it."</h3>
-                <p className="text-slate-500 text-sm">- Sagar</p>
+                <p className="text-slate-500 text-sm">   </p>
               </div>
             </div>
           </div>
