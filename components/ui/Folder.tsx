@@ -1,4 +1,5 @@
-import React, { useState, MouseEvent, useEffect } from 'react';
+import React, { useState, MouseEvent, useEffect, useRef } from 'react';
+
 import './Folder.css';
 
 const darkenColor = (hex: string, percent: number): string => {
@@ -44,6 +45,7 @@ const Folder: React.FC<FolderProps> = ({
         papers.push(null);
     }
 
+    const folderRef = useRef<HTMLDivElement>(null);
     const [internalOpen, setInternalOpen] = useState(false);
     const [paperOffsets, setPaperOffsets] = useState<{ x: number; y: number }[]>(
         Array.from({ length: maxItems }, () => ({ x: 0, y: 0 }))
@@ -64,6 +66,38 @@ const Folder: React.FC<FolderProps> = ({
             setInternalOpen(prev => !prev);
         }
     };
+
+    const handleMouseLeave = () => {
+        if (open) {
+            if (isControlled && onToggle) {
+                onToggle();
+            } else {
+                setInternalOpen(false);
+            }
+        }
+    };
+
+    useEffect(() => {
+        const handleOutsideClick = (e: globalThis.MouseEvent | globalThis.TouchEvent) => {
+            if (folderRef.current && !folderRef.current.contains(e.target as Node)) {
+                if (open) {
+                    if (isControlled && onToggle) {
+                        onToggle();
+                    } else {
+                        setInternalOpen(false);
+                    }
+                }
+            }
+        };
+
+        document.addEventListener('mousedown', handleOutsideClick);
+        document.addEventListener('touchstart', handleOutsideClick);
+
+        return () => {
+            document.removeEventListener('mousedown', handleOutsideClick);
+            document.removeEventListener('touchstart', handleOutsideClick);
+        };
+    }, [open, isControlled, onToggle]);
 
     // Reset offsets when closing
     useEffect(() => {
@@ -106,7 +140,7 @@ const Folder: React.FC<FolderProps> = ({
     const scaleStyle = { transform: `scale(${size})`, display: 'inline-block' };
 
     return (
-        <div style={scaleStyle} className={className}>
+        <div style={scaleStyle} className={className} ref={folderRef} onMouseLeave={handleMouseLeave}>
             <div className={folderClassName} style={folderStyle} onClick={handleClick}>
                 <div className="folder__back">
                     {papers.map((item, i) => (
