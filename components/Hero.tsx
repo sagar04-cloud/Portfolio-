@@ -6,6 +6,7 @@ import {
   Linkedin,
   Mail,
   ArrowUpRight,
+  FileText,
 } from 'lucide-react';
 import { motion, Variants } from 'framer-motion';
 import TiltCard from './ui/TiltCard';
@@ -187,6 +188,7 @@ const Hero: React.FC<HeroProps> = ({ startPopup = false }) => {
           <SocialRow icon={<Github className="w-6 h-6" />} label="Github" href="https://github.com/sagar04-cloud" />
           <SocialRow icon={<Linkedin className="w-6 h-6" />} label="LinkedIn" href="https://www.linkedin.com/in/sagar-u/" />
           <SocialRow icon={<Mail className="w-6 h-6" />} label="Email" href="https://mail.google.com/mail/?view=cm&fs=1&to=sagaru.works@gmail.com" />
+          <SocialRow icon={<FileText className="w-6 h-6" />} label="Resume" href="/resume/index.html" />
         </motion.div>
 
         {/* 6. Contact CTA (2x1) */}

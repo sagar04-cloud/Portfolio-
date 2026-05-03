@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagar U - Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            500: '#111827',
+                            400: '#374151',
+                            300: '#6B7280',
+                            200: '#E5E7EB',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media print {
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            body {
+                background-color: white !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            #resume-container {
+                box-shadow: none !important;
+                margin: 0 !important;
+                padding: 12mm 15mm !important;
+                width: 100% !important;
+                max-width: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 antialiased text-gray-800">
+
+    <div id="resume-container" class="max-w-[850px] mx-auto bg-white shadow-xl my-8 p-10 sm:p-14 min-h-[1100px]">
+        
+        <!-- HEADER SECTION -->
+        <header class="mb-8">
+            <h1 class="text-4xl font-bold text-brand-500 tracking-tight mb-1">Sagar U</h1>
+            <h2 class="text-sm font-semibold tracking-widest text-brand-400 uppercase mb-4">
+                Software Developer &bull; AI Application Developer &bull; DevOps Intern
+            </h2>
+
+            <!-- Contact Information -->
+            <div class="flex flex-wrap items-center gap-y-2 gap-x-4 text-sm text-brand-400">
+                <a href="mailto:sagaru.works@gmail.com" class="flex items-center gap-1.5 hover:text-blue-600 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    sagaru.works@gmail.com
+                </a>
+                <span class="flex items-center gap-1.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+                    +91 99803 27249
+                </span>
+                <span class="flex items-center gap-1.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                    India
+                </span>
+                <a href="https://sagarr-1.vercel.app" target="_blank" class="flex items-center gap-1.5 hover:text-blue-600 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                    sagarr-1.vercel.app
+                </a>
+                <a href="https://github.com/sagar04-cloud" target="_blank" class="flex items-center gap-1.5 hover:text-blue-600 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    github.com/sagar04-cloud
+                </a>
+            </div>
+        </header>
+
+        <!-- SUMMARY -->
+        <section class="mb-7">
+            <h3 class="text-sm font-bold tracking-wider text-brand-500 uppercase border-b border-brand-200 pb-1 mb-3">Summary</h3>
+            <p class="text-sm text-brand-400 leading-relaxed">
+                Final year Computer Applications student with experience in full-stack development, AI-powered applications, and DevOps practices. Skilled in building scalable web applications using React, TypeScript, and modern development tools. Developed multiple AI-based platforms including AI Interviewer, SkillBridge AI, and Smart Campus Assistant. Interested in combining software development and DevOps to build efficient and scalable systems.
+            </p>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="mb-7">
+            <h3 class="text-sm font-bold tracking-wider text-brand-500 uppercase border-b border-brand-200 pb-1 mb-4">Experience</h3>
+            
+            <div class="mb-4">
+                <div class="flex justify-between items-baseline mb-0.5">
+                    <h4 class="text-sm font-semibold text-brand-500">DevOps Intern</h4>
+                    <span class="text-xs font-medium text-brand-300">2025 &ndash; Present</span>
+                </div>
+                <div class="text-sm text-brand-400 italic mb-2">India</div>
+                <ul class="list-disc list-outside ml-4 text-sm text-brand-400 space-y-1">
+                    <li>Assisted in deploying and managing web applications on cloud platforms.</li>
+                    <li>Worked with Git and GitHub for version control and collaborative development.</li>
+                    <li>Learned CI/CD concepts and automated deployment workflows.</li>
+                    <li>Monitored application performance and deployment processes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="mb-7">
+            <h3 class="text-sm font-bold tracking-wider text-brand-500 uppercase border-b border-brand-200 pb-1 mb-4">Projects</h3>
+            <ul class="list-disc list-outside ml-4 text-sm text-brand-400 space-y-2">
+                <li>
+                    <span class="font-semibold text-brand-500">AI Interviewer</span> &mdash; AI-powered interview practice platform for simulating technical interviews. Built using React and AI APIs; generates questions and analyzes responses to help students prepare for technical and behavioral interviews.
+                </li>
+                <li>
+                    <span class="font-semibold text-brand-500">SkillBridge AI</span> &mdash; AI-based career guidance platform that analyzes resumes, identifies skill gaps, and generates structured learning paths and career roadmaps for technology roles.
+                </li>
+                <li>
+                    <span class="font-semibold text-brand-500">Smart Campus Assistant</span> &mdash; AI assistant that automates responses to academic and campus queries for students.
+                </li>
+                <li>
+                    <span class="font-semibold text-brand-500">Smart Rental Management System</span> &mdash; Web-based system for managing college equipment rentals, built with React and TypeScript, with integrated QR code tracking.
+                </li>
+            </ul>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="mb-7">
+            <h3 class="text-sm font-bold tracking-wider text-brand-500 uppercase border-b border-brand-200 pb-1 mb-4">Skills</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-4 text-sm text-brand-400">
+                <div><span class="font-semibold text-brand-500">Programming:</span> JavaScript, TypeScript, Python</div>
+                <div><span class="font-semibold text-brand-500">Frontend:</span> React.js, HTML, CSS, Tailwind CSS</div>
+                <div><span class="font-semibold text-brand-500">Backend:</span> Node.js, REST APIs</div>
+                <div><span class="font-semibold text-brand-500">DevOps:</span> CI/CD, GitHub Actions, Cloud Deployment, Linux</div>
+                <div><span class="font-semibold text-brand-500">Tools:</span> Git, GitHub, Vercel, VS Code, Postman</div>
+                <div><span class="font-semibold text-brand-500">AI:</span> AI APIs, Prompt Engineering, AI Application Development</div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="mb-7">
+            <h3 class="text-sm font-bold tracking-wider text-brand-500 uppercase border-b border-brand-200 pb-1 mb-4">Education</h3>
+            <div>
+                <div class="flex justify-between items-baseline mb-0.5">
+                    <h4 class="text-sm font-semibold text-brand-500">BCA — Bachelor of Computer Applications</h4>
+                    <span class="text-xs font-medium text-brand-300">Expected 2026</span>
+                </div>
+                <div class="text-sm text-brand-400 mb-1">KLE Society's Degree College &bull; Bengaluru</div>
+            </div>
+        </section>
+
+        <!-- LANGUAGES -->
+        <section>
+            <h3 class="text-sm font-bold tracking-wider text-brand-500 uppercase border-b border-brand-200 pb-1 mb-3">Languages</h3>
+            <div class="text-sm text-brand-400 flex gap-4">
+                <span>English</span>
+                <span class="text-gray-300">&bull;</span>
+                <span>Hindi</span>
+                <span class="text-gray-300">&bull;</span>
+                <span>Kannada</span>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

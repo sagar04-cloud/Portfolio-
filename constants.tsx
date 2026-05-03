@@ -21,7 +21,7 @@ export const PROJECTS: Project[] = [
     id: '1',
     title: 'AI Interview Prep',
     description: 'A state-of-the-art platform designed to help candidates ace job interviews using Gemini 2.5 Flash. features real-time mock interviews with voice interaction and structured feedback.',
-    image: './assets/ai-interviewer.png',
+    image: '/assets/ai-interviewer.png',
     tech: ['React', 'TypeScript', 'Tailwind CSS', 'Gemini AI'],
     liveUrl: 'https://ai-interviewer1.vercel.app/',
     githubUrl: 'https://github.com/sagar04-cloud/ai-interview'
@@ -30,7 +30,7 @@ export const PROJECTS: Project[] = [
     id: '2',
     title: 'SkillBridge AI',
     description: 'An AI-driven platform designed to bridge the gap between skills and career opportunities. It leverages Gemini AI to provide intelligent recommendations and path-finding for skill development.',
-    image: './assets/skill-bridge.png',
+    image: '/assets/skill-bridge.png',
     tech: ['React', 'TypeScript', 'Node.js', 'Gemini AI'],
     liveUrl: 'https://skillbridge-ai-iota.vercel.app/',
     githubUrl: 'https://github.com/sagar04-cloud/SkillBridge-AI'
@@ -39,7 +39,7 @@ export const PROJECTS: Project[] = [
     id: '3',
     title: 'Smart Campus Assistant',
     description: 'An intelligent campus assistant featuring an AI chatbot for general inquiries, campus navigation assistance, and real-time event information for students and faculty.',
-    image: './assets/smart-campus.png',
+    image: '/assets/smart-campus.png',
     tech: ['React', 'TypeScript', 'Node.js', 'Gemini AI'],
     liveUrl: 'https://smart-campus-ai-assistant.vercel.app/',
     githubUrl: 'https://github.com/sagar04-cloud/smart-campus-ai-assistant'
