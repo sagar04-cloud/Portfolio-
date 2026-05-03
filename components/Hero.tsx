@@ -194,7 +194,12 @@ const Hero: React.FC<HeroProps> = ({ startPopup = false }) => {
         {/* 6. Contact CTA (2x1) */}
         <motion.div variants={itemVariants} className="col-span-1 md:col-span-2 relative group">
           <TiltCard className="h-full">
-            <div className="bento-card p-8 flex flex-row justify-between items-center bg-gradient-to-r from-indigo-900/50 to-purple-900/50 border-indigo-500/20 cursor-pointer relative overflow-hidden hover:border-indigo-500/50 transition-colors h-full">
+            <a 
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=sagaru.works@gmail.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="bento-card p-8 flex flex-row justify-between items-center bg-gradient-to-r from-indigo-900/50 to-purple-900/50 border-indigo-500/20 cursor-pointer relative overflow-hidden hover:border-indigo-500/50 transition-colors h-full no-underline"
+            >
               <div className="relative z-10 text-left">
                 <div className="font-bold text-2xl text-white mb-1">Let's build something epic.</div>
                 <p className="text-indigo-200/80 text-sm">Open for freelance and collaborations.</p>
@@ -206,7 +211,7 @@ const Hero: React.FC<HeroProps> = ({ startPopup = false }) => {
 
               {/* Subtle shine effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:animate-shine" style={{ animationDuration: '1.5s' }}></div>
-            </div>
+            </a>
           </TiltCard>
         </motion.div>
 

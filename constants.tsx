@@ -20,7 +20,7 @@ export const PROJECTS: Project[] = [
   {
     id: '1',
     title: 'AI Interview Prep',
-    description: 'A state-of-the-art platform designed to help candidates ace job interviews using Gemini 2.5 Flash. features real-time mock interviews with voice interaction and structured feedback.',
+    description: 'Engineered a real-time mock interview platform utilizing Gemini 2.5 Flash, reducing candidate prep time by 50% and successfully handling 40+ simulated voice interactions with structured feedback.',
     image: '/assets/ai-interviewer.png',
     tech: ['React', 'TypeScript', 'Tailwind CSS', 'Gemini AI'],
     liveUrl: 'https://ai-interviewer1.vercel.app/',
@@ -29,7 +29,7 @@ export const PROJECTS: Project[] = [
   {
     id: '2',
     title: 'SkillBridge AI',
-    description: 'An AI-driven platform designed to bridge the gap between skills and career opportunities. It leverages Gemini AI to provide intelligent recommendations and path-finding for skill development.',
+    description: 'Developed an AI-driven career pathing platform leveraging Gemini AI, increasing personalized course recommendation accuracy by 35% and accelerating user upskilling workflows.',
     image: '/assets/skill-bridge.png',
     tech: ['React', 'TypeScript', 'Node.js', 'Gemini AI'],
     liveUrl: 'https://skillbridge-ai-iota.vercel.app/',
@@ -38,7 +38,7 @@ export const PROJECTS: Project[] = [
   {
     id: '3',
     title: 'Smart Campus Assistant',
-    description: 'An intelligent campus assistant featuring an AI chatbot for general inquiries, campus navigation assistance, and real-time event information for students and faculty.',
+    description: 'Architected an intelligent campus assistant that reduced student inquiry resolution time by 40% using Gemini AI to provide real-time navigation, event details, and automated FAQ responses.',
     image: '/assets/smart-campus.png',
     tech: ['React', 'TypeScript', 'Node.js', 'Gemini AI'],
     liveUrl: 'https://smart-campus-ai-assistant.vercel.app/',

@@ -60,7 +60,7 @@ const Contact: React.FC = () => {
           </div>
 
           <div className="mt-20 pt-8 border-t border-slate-800 text-slate-500 text-sm transform transition-all duration-500 group-hover:text-slate-400">
-            &copy; {new Date().getFullYear()} AI.DEV Portfolio. Crafted with passion & AI.
+            &copy; {new Date().getFullYear()} Sagar.Portfolio. Crafted with passion & AI.
           </div>
         </div>
       </TiltCard>
