@@ -68,6 +68,10 @@ const Folder: React.FC<FolderProps> = ({
     };
 
     const handleMouseLeave = () => {
+        // Prevent auto-closing on mobile from simulated mouse events
+        if (typeof window !== 'undefined' && window.matchMedia('(hover: none) and (pointer: coarse)').matches) {
+            return;
+        }
         if (open) {
             if (isControlled && onToggle) {
                 onToggle();
@@ -108,6 +112,10 @@ const Folder: React.FC<FolderProps> = ({
 
     const handlePaperMouseMove = (e: MouseEvent<HTMLDivElement>, index: number) => {
         if (!open) return;
+        // Disable magnet effect on touch devices to prevent lag
+        if (typeof window !== 'undefined' && window.matchMedia('(hover: none) and (pointer: coarse)').matches) {
+            return;
+        }
         const rect = e.currentTarget.getBoundingClientRect();
         const centerX = rect.left + rect.width / 2;
         const centerY = rect.top + rect.height / 2;
@@ -149,6 +157,7 @@ const Folder: React.FC<FolderProps> = ({
                             className={`paper paper-${i + 1}`}
                             onMouseMove={e => handlePaperMouseMove(e, i)}
                             onMouseLeave={e => handlePaperMouseLeave(e, i)}
+                            onClick={e => e.stopPropagation()}
                             style={
                                 open
                                     ? ({

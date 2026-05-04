@@ -64,7 +64,7 @@ const Hero: React.FC<HeroProps> = ({ startPopup = false }) => {
   };
 
   return (
-    <section className="min-h-screen pt-32 pb-20 px-6 relative">
+    <section className="min-h-screen pt-16 md:pt-32 pb-20 px-6 relative">
       {/* System Access Popup Overlay */}
       <style>
         {`@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Rajdhani:wght@500;700&display=swap');`}
@@ -184,11 +184,13 @@ const Hero: React.FC<HeroProps> = ({ startPopup = false }) => {
           </div>
         </motion.div>
 
-        <motion.div variants={itemVariants} className="col-span-1 md:col-span-2 bento-card p-6 flex flex-col md:flex-row justify-around items-center gap-4 hover:border-pink-500/30">
-          <SocialRow icon={<Github className="w-6 h-6" />} label="Github" href="https://github.com/sagar04-cloud" />
-          <SocialRow icon={<Linkedin className="w-6 h-6" />} label="LinkedIn" href="https://www.linkedin.com/in/sagar-u/" />
-          <SocialRow icon={<Mail className="w-6 h-6" />} label="Email" href="https://mail.google.com/mail/?view=cm&fs=1&to=sagaru.works@gmail.com" />
-          <SocialRow icon={<FileText className="w-6 h-6" />} label="Resume" href="/resume/index.html" />
+        <motion.div variants={itemVariants} className="col-span-1 md:col-span-2 bento-card p-6 flex justify-center items-center hover:border-pink-500/30">
+          <div className="flex flex-col md:flex-row gap-4 items-start md:items-center w-fit md:w-full md:justify-around">
+            <SocialRow icon={<Github className="w-6 h-6" />} label="Github" href="https://github.com/sagar04-cloud" />
+            <SocialRow icon={<Linkedin className="w-6 h-6" />} label="LinkedIn" href="https://www.linkedin.com/in/sagar-u/" />
+            <SocialRow icon={<Mail className="w-6 h-6" />} label="Email" href="https://mail.google.com/mail/?view=cm&fs=1&to=sagaru.works@gmail.com" />
+            <SocialRow icon={<FileText className="w-6 h-6" />} label="Resume" href="/resume/index.html" />
+          </div>
         </motion.div>
 
         {/* 6. Contact CTA (2x1) */}
